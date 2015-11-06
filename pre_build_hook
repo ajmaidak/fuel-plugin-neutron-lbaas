@@ -7,3 +7,6 @@ MODULES="${ROOT}"/deployment_scripts/puppet/modules/
 TMP_DIR="${ROOT}"/tmp
 mkdir -p "${MODULES}"
 mkdir -p "${TMP_DIR}"
+REPO_PATH='https://review.fuel-infra.org/p/puppet-modules/puppetlabs-inifile.git'
+
+git clone ${REPO_PATH} ${MODULES}/inifile
